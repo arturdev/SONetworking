@@ -30,6 +30,6 @@ SOJsonRequestOperation.StartJSONRequestOperation(HttpMethod.Get, "<b>me/friends<
             {
                 Debug.WriteLine(friend["name"]);
             }
-}
+    }
     });
 </pre>
