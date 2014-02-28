@@ -6,7 +6,7 @@ Networking Static Library  (for Windows phone 7.1)
 USAGE
 =====
 
-Add all *.dll file in SONetworking/Bin/Release/ to your project's references. 
+Add all *.dll files containing in SONetworking/Bin/Release/ folder to your project's references.
 
 Add SONetworking to using list.
 
