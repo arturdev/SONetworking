@@ -16,17 +16,17 @@ using SONetworking;
 
 Example of how to get facebook's user info
 <pre>
-      SOJsonRequestOperation.BaseUrl = "https://graph.facebook.com/";
+SOJsonRequestOperation.BaseUrl = "https://graph.facebook.com/";
 
-      List<KeyValuePair<string,string>> parameters = new List<KeyValuePair<string, string>>();
-      parameters.Add(new KeyValuePair<string, string>("access_token", "_your_fb_access_token_"));
+List<KeyValuePair<string,string>> parameters = new List<KeyValuePair<string, string>>();
+parameters.Add(new KeyValuePair<string, string>("access_token", "_your_fb_access_token_"));
 
-      SOJsonRequestOperation.StartJSONRequestOperation(HttpMethod.Get, "me",parameters,
-          delegate(bool success, int statusCode, JObject fbObject)
-          {
-              if (success)
-              {
-                  MessageBox.Show(fbObject["name"].ToString());
-              }
-          });
+SOJsonRequestOperation.StartJSONRequestOperation(HttpMethod.Get, "me",parameters,
+    delegate(bool success, int statusCode, JObject fbObject)
+    {
+        if (success)
+        {
+            MessageBox.Show(fbObject["name"].ToString());
+        }
+    });
 </pre>
