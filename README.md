@@ -15,13 +15,14 @@ using SONetworking;
 </pre>
 
 Example of how to get facebook's user info
-<pre>
+
+```C# 
 SOJsonRequestOperation.BaseUrl = "https://graph.facebook.com/";
 
 List<KeyValuePair<string,string>> parameters = new List<KeyValuePair<string, string>>();
 parameters.Add(new KeyValuePair<string, string>("access_token", "_your_fb_access_token_"));
 
-SOJsonRequestOperation.StartJSONRequestOperation(HttpMethod.Get, "<b>me/friends</b>",parameters,
+SOJsonRequestOperation.StartJSONRequestOperation(HttpMethod.<font style="color:Blue">Get</font>, "<b>me/friends</b>",parameters,
     delegate(bool success, int statusCode, JObject fbObject)
     {
         if (success)
@@ -32,4 +33,5 @@ SOJsonRequestOperation.StartJSONRequestOperation(HttpMethod.Get, "<b>me/friends<
             }
     }
     });
-</pre>
+```
+
