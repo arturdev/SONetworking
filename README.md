@@ -31,7 +31,7 @@ SOJsonRequestOperation.StartJSONRequestOperation(HttpMethod.Get, "me/friends",pa
             {
                 Debug.WriteLine(friend["name"]);
             }
-    }
+        }
     });
 ```
 
