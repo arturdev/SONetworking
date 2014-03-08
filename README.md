@@ -14,7 +14,7 @@ Add SONetworking to using list.
 using SONetworking;
 </pre>
 
-Example of how to get facebook's user info
+Example of how to get facebook's user friend info
 
 ```C# 
 SOJsonRequestOperation.BaseUrl = "https://graph.facebook.com/";
